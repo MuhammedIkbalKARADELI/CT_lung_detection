@@ -19,3 +19,5 @@ DICOM dosyaları genellikle yalnızca piksel verilerinden başka bilgilere sahip
 
 
 > Not:  Bahsettiğimiz görüntüyle ilgili özniteliklerin, tıbbi görüntüler üzerinde gerçek dünya hesaplamalarını uygulamak için yararlı olduklarından anlaşılması çok önemlidir. Fakat bahsedeceğimiz büyük ölçüde güveneceğiz.
+
+DICOM dosyalarını karakterize edebilecek düzinelerce özellik vardır. Yani hepsini okunamaktadır. Yalnızca DICOM ile ilgili bir şey üzerinde çalışırken karşılaşabileceğiniz niteliklere odaklanmak gerekir. Bu amaçla, Innolitics tarafından oluşturulmuş bu harika DICOM Standart Tarayıcısını şiddetle tavsiye edilir, sadece öğrenmek istediğiniz özelliği aranır.
