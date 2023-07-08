@@ -71,3 +71,18 @@ Genellikle, "Pixel Data" özniteliği piksel değerlerine sahiptir:
 Piksel değerleri bir NumPy dizisi olarak saklanır. NumPy, dizilerle ve bunların hızlı bir şekilde hesaplanmasıyla uğraşmak için uygundur. Şimdi piksel değerlerini gösterimi:
 
 Pixel Data'nın neyi temsil ettiğini anladıktan sonra bu piksellerin görüntüsünü gösterimi için matplotlib kütüphanesinden yararlanılır.
+
+### Çoklu Dilimleri Yığınlanıp Okunması
+Bir DICOM dosyası, Piksel Verisi özniteliğinde yığılmış olarak bulunabilecek birden çok katmana sahip olabilir. Bunu videolar veya renkli görüntüler içeren DICOM dosyalarında, RGB kanallarında görülebilir. Ayrıca bazen, her DICOM dosyasının aynı hastanın bir karesini veya dilimini içerdiği bir klasörde birden fazla DICOM dosyası bulabilirsiniz. Bu durumda, bu DICOM dosyalarını kendimiz istiflemeliyiz. Bunun için ImageIO kütüphanesinden (.volread) methodunu kullanılarak kolayca yapılabilmektedir.
+
+Yığılmış görüntüler için "shape" ve "sample" niteliklerindeki farklılıklara dikkat edilir. Bu, (.volread) kullanılırken ImageIO okuması ile yapılır.
+
+### "Shape", "Sampling" ve "PixelAspectRatio" niteliklerini anlaşılması
+* **Shape:** Basitçe her dilimdeki satır ve sütun sayısıdır. Birden çok dilimle uğraştığımız için, üst üste yığılmış dilim sayısına eşit bir üçüncü boyut olacaktır. Örneğimizde, yığılmış görüntülerin şekli 99 dilim, 512 satır ve 512 sütundur.
+  
+* **Sampling:** DICOM Standardında "Sampling" için arama yaparsanız, doğrudan bir yanıt alamazsınız. Çünkü ImageIO'da yerleşik özel bir değişkendir. SliceThickness ve PixelSpacing olmak üzere iki özelliğin bu Örnekleme birleşimi. Dilim Kalınlığı basitçe mm cinsinden nominal dilim kalınlığıdır. PixelSpacing özelliğine gelince, hastadaki fiziksel mesafedir. Bir sayısal çift tarafından belirtilir: İlk değer, mm cinsinden satır aralığıdır, yani bitişik sıraların merkezleri arasındaki boşluk veya dikey boşluktur. İkinci değer, mm cinsinden sütun aralığı, yani bitişik sütunların merkezleri arasındaki boşluk veya yatay boşluktur.
+
+* **Pixel Aspect Ratio:** Belirli bir eksen boyunca görüntüdeki piksellerin dikey boyutunun ve yatay boyutunun oranı. İstiflenmiş görüntülerin meta verilerinde “PixelAspectRatio” olmadığına dikkat edin. Ama sorun değil çünkü "Sampling" parametrelerini kullanarak her eksendeki en boy oranı hesaplanabilinir.
+
+
+
