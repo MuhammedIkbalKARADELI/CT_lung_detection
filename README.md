@@ -5,6 +5,11 @@ Bu projenin amacı BT görüntülerinden akciğeri segmente ederek direkt olarak
 
 Bu projede her bir hastanın akciğer görüntüleri ile Segmentesyon yaparak 3D görüntüler elde edilmesi amaçlanmaktadır. Öncelikle DICOM formatındaki datanın nasıl ele alınacağını sonrasında Akciğer BT görüntülerine bu öğrenilen yöntemlerle segemnetasyonu gözlemlenecektir. Bu projenin devamında da 3 boyutlu dataları derin ağ mimarileri yardımıyla eğitilerek kanser teşhisinde yardımcı destek mekanizması oluşturulması planlanmaktadır.
 
+## Dataset 
+Burada yararlandığımız veriler kaggle platfromundan yararlanılmıştır. Bağlantısı: https://www.kaggle.com/datasets/dmisky/dlwptvolumetricdicomlung
+Lisansı: https://opendatacommons.org/licenses/dbcl/1-0/
+
+
 ### DICOM
 
 DICOM, tıbbi görüntüleme sistemlerinin ekmek kapısıdır. Biyomedikal Mühendisi, sağlık hizmetleri alanında BT Uzmanı veya Sağlık Hizmetleri Veri Bilimcisi/Analistiyseniz, tıbbi görüntüleme sistemleriyle ilgili her yerde olduğu için muhtemelen DICOM'u kullanmış veya en azından duymuşsunuzdur.
