@@ -51,5 +51,11 @@ ImageIO paketinden (.imread) kullanarak bir DICOM dosyasını kolayca okuyabilir
 (.meta) kullanıldığında, bu DICOM dosyasının özniteliklerini, meta verilerini içeren bir sözlük çıkarır.
 
 
+### The Attributes of the DICOM File
+Meta veriler bir sözlük olarak saklandığından, DICOM dosyasının anahtarlarını, niteliklerin adlarını gösterir:
+im.meta.keys()
 
+Results: 
+odict_keys(['TransferSyntaxUID', 'SOPClassUID', 'SOPInstanceUID', 'StudyDate', 'SeriesDate', 'AcquisitionDate', 'ContentDate', 'StudyTime', 'SeriesTime', 'AcquisitionTime', 'ContentTime', 'Modality', 'Manufacturer', 'StudyDescription', 'SeriesDescription', 'PatientName', 'PatientID', 'PatientBirthDate', 'PatientSex', 'PatientAge', 'StudyInstanceUID', 'SeriesInstanceUID', 'SeriesNumber', 'AcquisitionNumber', 'InstanceNumber', 'ImagePositionPatient', 'ImageOrientationPatient', 'SamplesPerPixel', 'Rows', 'Columns', 'PixelSpacing', 'BitsAllocated', 'BitsStored', 'HighBit', 'PixelRepresentation', 'RescaleIntercept', 'RescaleSlope', 'PixelData', 'shape', 'sampling'])
 
+> Not: Burada gördüğümüz öznitelikler, bu DICOM dosyasında yer alan özniteliklerin tamamı olmayabilir. Bunun nedeni, ImageIO'nun DICOM görüntülerini olabildiğince basit bir şekilde ele almasıdır. İsteğe bağlı bir okuma, ImageIO'nun desteklediği özniteliklerin sözlüğünü görmek için bu bağlantıyı kontrol etmektir.
