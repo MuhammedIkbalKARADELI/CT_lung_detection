@@ -21,3 +21,35 @@ DICOM dosyaları genellikle yalnızca piksel verilerinden başka bilgilere sahip
 > Not:  Bahsettiğimiz görüntüyle ilgili özniteliklerin, tıbbi görüntüler üzerinde gerçek dünya hesaplamalarını uygulamak için yararlı olduklarından anlaşılması çok önemlidir. Fakat bahsedeceğimiz büyük ölçüde güveneceğiz.
 
 DICOM dosyalarını karakterize edebilecek düzinelerce özellik vardır. Yani hepsini okunamaktadır. Yalnızca DICOM ile ilgili bir şey üzerinde çalışırken karşılaşabileceğiniz niteliklere odaklanmak gerekir. Bu amaçla, Innolitics tarafından oluşturulmuş bu harika DICOM Standart Tarayıcısını şiddetle tavsiye edilir, sadece öğrenmek istediğiniz özelliği aranır.
+
+
+## Bu çalışmanın bu kısmında şunları tartışacağız:
+
+* DICOM dosyalarını ImageIO kullanarak okuyun.
+* DICOM öznitelikleri, Meta veriler.
+* Belirli bir DICOM özniteliğine erişin.
+* Matplotlib paketi kullanılarak görüntü gösterimi.
+* Birden fazla dilimi istifleyin ve okuyun.
+* Piksel Aralığını, Şekli, Dilim Kalınlığını, En Boy Oranını ve görüş alanını anlayın.
+* Ipywidgets kullanarak eksenel, koronal ve sagital düzlemler boyunca etkileşimli bir görüntü temsili oluşturun.
+
+
+## Hadi Başlayalım
+
+Öncelikle gerekli paketleri import edelim. 
+* ImageIO = DICOM dosyalarıyla başa çıkmak için
+* NumPy = Piksel verileri bir NumPy dizisi olarak okunurken
+* matplotlib = görüntüleri görselleştirmek için 
+* Ipywidgets = çoklu görüntü dilimleri arasında gezinmek için kullanabileceğimiz etkileşimli bir kaydırıcı oluşturmak için de kullanılıcaktır.
+
+
+### DICOM Dosyalarını Okuma
+ImageIO paketinden (.imread) kullanarak bir DICOM dosyasını kolayca okuyabilir ve bir değişkende saklayabiliriz.
+
+
+### DICOM Nitelikleri
+(.meta) kullanıldığında, bu DICOM dosyasının özniteliklerini, meta verilerini içeren bir sözlük çıkarır.
+
+
+
+
