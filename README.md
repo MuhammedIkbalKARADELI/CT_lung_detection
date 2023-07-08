@@ -135,5 +135,5 @@ Delet Table fonksiyonu bu BT görüntüsünde işe yarmayacaktı çünkü elimiz
 Görüntü segmentasyon bağlamında, yakın bölgeleri veya nesneleri birleştirmek, boşlukları veya delikleri doldurmak ve genellikle ön plandaki nesnelerin sınırlarını geliştirmek veya değiştirmek için genişleme kullanılabilir. binary_dilation ile elde edilen bianry resim ile orijinal resimin biribrimyle çarpımından elde edilen resim istediğimiz bölgeyi direk bize göstererek direk akciğer görüntüsüne odaklnama imkanı sunar. Ve bu ilgili alan yapay zekanın daha iyi öğrenmesine olanak sağlar. Bu süreçte binary_dilation önemli bir rol almaktadır. 
 
 ### Son olarak 
-Üç düzlemi (sırasıyla Eksenel, Koronal ve Sagital) içeren 3 çizimi şimdide BT görüntülerinin segmentasynun sonucu ile bunu gerçekleştirilecektir.
+Üç düzlemi (sırasıyla Eksenel, Koronal ve Sagital) içeren 3 çizimi şimdide BT görüntülerinin segmentasynun sonucu ile bunu gerçekleştirimiştir.
 
