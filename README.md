@@ -105,7 +105,7 @@ Tek bir görüntü düzlemi ile yalnızca bir kaydırıcının ötesine geçelim
 ### Hounsfield Birimleri (HU)
 BT taramasının piksel değerleri Hounsfield Birimleri cinsinden ifade edilmiştir çünkü BT taramalarındaki ölçü birimi, bir radyo yoğunluğu ölçüsü olan Hounsfield Birimidir (HU). BT tarayıcıları, bunu doğru bir şekilde ölçmek için dikkatlice kalibre edilir.
 
-<img src="Ekran Resmi 2023-07-06 13.25.45.png" width="auto">
+<img src="Ekran Resmi 2023-07-08 21.20.45.png" width="auto">
 
 
 Malzemelerin HU değerleri Aşağıdaki tablodaki gibidir.
