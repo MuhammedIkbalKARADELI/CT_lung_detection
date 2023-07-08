@@ -69,3 +69,5 @@ Belirli bir özniteliğe erişim için "Modality" kullanımı:
 Genellikle, "Pixel Data" özniteliği piksel değerlerine sahiptir:
 
 Piksel değerleri bir NumPy dizisi olarak saklanır. NumPy, dizilerle ve bunların hızlı bir şekilde hesaplanmasıyla uğraşmak için uygundur. Şimdi piksel değerlerini gösterimi:
+
+Pixel Data'nın neyi temsil ettiğini anladıktan sonra bu piksellerin görüntüsünü gösterimi için matplotlib kütüphanesinden yararlanılır.
