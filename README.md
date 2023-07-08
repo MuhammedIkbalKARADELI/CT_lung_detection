@@ -84,5 +84,7 @@ Yığılmış görüntüler için "shape" ve "sample" niteliklerindeki farklıl�
 
 * **Pixel Aspect Ratio:** Belirli bir eksen boyunca görüntüdeki piksellerin dikey boyutunun ve yatay boyutunun oranı. İstiflenmiş görüntülerin meta verilerinde “PixelAspectRatio” olmadığına dikkat edin. Ama sorun değil çünkü "Sampling" parametrelerini kullanarak her eksendeki en boy oranı hesaplanabilinir.
 
+<img src="Ekran Resmi 2023-07-06 13.25.53.png" width="auto">
+           Resim1: Yol Resmi
 
 
