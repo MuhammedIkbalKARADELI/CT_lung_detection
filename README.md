@@ -59,3 +59,13 @@ Results:
 odict_keys(['TransferSyntaxUID', 'SOPClassUID', 'SOPInstanceUID', 'StudyDate', 'SeriesDate', 'AcquisitionDate', 'ContentDate', 'StudyTime', 'SeriesTime', 'AcquisitionTime', 'ContentTime', 'Modality', 'Manufacturer', 'StudyDescription', 'SeriesDescription', 'PatientName', 'PatientID', 'PatientBirthDate', 'PatientSex', 'PatientAge', 'StudyInstanceUID', 'SeriesInstanceUID', 'SeriesNumber', 'AcquisitionNumber', 'InstanceNumber', 'ImagePositionPatient', 'ImageOrientationPatient', 'SamplesPerPixel', 'Rows', 'Columns', 'PixelSpacing', 'BitsAllocated', 'BitsStored', 'HighBit', 'PixelRepresentation', 'RescaleIntercept', 'RescaleSlope', 'PixelData', 'shape', 'sampling'])
 
 > Not: Burada gördüğümüz öznitelikler, bu DICOM dosyasında yer alan özniteliklerin tamamı olmayabilir. Bunun nedeni, ImageIO'nun DICOM görüntülerini olabildiğince basit bir şekilde ele almasıdır. İsteğe bağlı bir okuma, ImageIO'nun desteklediği özniteliklerin sözlüğünü görmek için bu bağlantıyı kontrol etmektir.
+
+
+### Belirli bir DICOM Özniteliğine Erişin
+Belirli bir özniteliğe erişim için "Modality" kullanımı:
+
+
+### Matplotlib Kütüphanesini Kullanarak Görüntü Temsili
+Genellikle, "Pixel Data" özniteliği piksel değerlerine sahiptir:
+
+Piksel değerleri bir NumPy dizisi olarak saklanır. NumPy, dizilerle ve bunların hızlı bir şekilde hesaplanmasıyla uğraşmak için uygundur. Şimdi piksel değerlerini gösterimi:
