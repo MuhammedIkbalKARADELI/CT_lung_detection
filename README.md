@@ -13,7 +13,8 @@ Burada yararlandığımız veriler kaggle platfromundan yararlanılmıştır.
 
 ### DICOM
 
-DICOM, tıbbi görüntüleme sistemlerinin ekmek kapısıdır. Biyomedikal Mühendisi, sağlık hizmetleri alanında BT Uzmanı veya Sağlık Hizmetleri Veri Bilimcisi/Analistiyseniz, tıbbi görüntüleme sistemleriyle ilgili her yerde olduğu için muhtemelen DICOM'u kullanmış veya en azından duymuşsunuzdur.
+
+DICOM, tıbbi görüntüleme sistemlerinin ekmek kapısıdır. Biyomedikal Mühendisi, sağlık hizmetleri alanında BT Uzmanı veya Sağlık Hizmetleri Veri Bilimcisi/Analistiyseniz, tıbbi görüntüleme sistemleriyle ilgili her yerde olduğu için muhtemelen DICOM'u kullanmış veya en azından duymuşsunuzdur. Bu çalışmada yararlandığım kaynak olarak linki: https://towardsdatascience.com/dealing-with-dicom-using-imageio-python-package-117f1212ab82 şu eşkilde paylaşabilirim.
 
 DICOM, Tıpta Dijital Görüntüleme ve İletişim, örneğin; BT, MRI, Ultrason vb. birden fazla üretici arasında, böylece DICOM uyumlu olan tüm tıbbi makineler bir ağ üzerinden bilgi gönderirken aynı dili konuşabilir.
 
