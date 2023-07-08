@@ -128,6 +128,8 @@ Bazı dilimlerde akciğerlerden biri masadan daha büyük olabilir.
 Bazı dilimlerde akciğerlerden biri masadan daha küçük olabilir.
 Sadece en büyük iki dilimi alırsak, masayı ve ciğerlerden birini alabiliriz. Şimdilik ilk 3'ü ele alalım. Aşağıdaki işlev, 3B görüntünün tek bir diliminde çalışacak şekilde tasarlanmıştır.
 
+### Delete Table
+Delet Table fonksiyonu bu BT görüntüsünde işe yarmayacaktı çünkü elimizdeki BT görüntülerinde Hasta masaının görüntüde yeri yoktur bu yüzden bu işlemi yapmamız ekstra bir anlam ifade etmeyecektir. Ancak şu an zararı yoktur. Gelebilecek faklı bir BT görütüsü için faydalı olaaktır.
 
 ### binary_dilation()
 Görüntü segmentasyon bağlamında, yakın bölgeleri veya nesneleri birleştirmek, boşlukları veya delikleri doldurmak ve genellikle ön plandaki nesnelerin sınırlarını geliştirmek veya değiştirmek için genişleme kullanılabilir. binary_dilation ile elde edilen bianry resim ile orijinal resimin biribrimyle çarpımından elde edilen resim istediğimiz bölgeyi direk bize göstererek direk akciğer görüntüsüne odaklnama imkanı sunar. Ve bu ilgili alan yapay zekanın daha iyi öğrenmesine olanak sağlar. Bu süreçte binary_dilation önemli bir rol almaktadır. 
