@@ -85,6 +85,36 @@ Yığılmış görüntüler için "shape" ve "sample" niteliklerindeki farklıl�
 * **Pixel Aspect Ratio:** Belirli bir eksen boyunca görüntüdeki piksellerin dikey boyutunun ve yatay boyutunun oranı. İstiflenmiş görüntülerin meta verilerinde “PixelAspectRatio” olmadığına dikkat edin. Ama sorun değil çünkü "Sampling" parametrelerini kullanarak her eksendeki en boy oranı hesaplanabilinir.
 
 <img src="Ekran Resmi 2023-07-06 13.25.53.png" width="auto">
-           Resim1: Yol Resmi
+
+Şimdi her biri belirli bir eksen boyunca üç dilimin görüntülerini gösterelim. Her eksen boyunca dilimlerin şeklini kolayca anlamak için eksenleri kasıtlı olarak gösterimi.
+
+Sadece eksen düzleminin dağınık olmadığını görebiliriz. Bunun nedeni, "açı" argümanının varsayılan olarak 1'e ayarlanmasıdır, bu bizim durumumuzda eksen düzleminin en boy oranıdır (d1/d2 = 0,564453125 / 0,564453125 = 1).
+
+
+### Görüş alanı
+"Shape" parametrelerini "Sampling" parametreleriyle çarparak, her eksen boyunca mm cinsinden fiziksel alan, her eksen boyunca Görüş Alanını elde ederiz.
+
+### Son bir detay 
+Tek bir görüntü düzlemi ile yalnızca bir kaydırıcının ötesine geçelim. Üç düzlemi (sırasıyla Eksenel, Koronal ve Sagital) içeren 3 çizimden oluşan bir şekil oluşturacağız. Her düzlem için özel kaydırıcıyı kullanarak dilim numarasını belirtebiliriz. Yukarıdaki gibi dağınık olmaması için doğru en boy oranını eklenir.
+
+
+# Image Segmentation
+
+### Image dilimini çizilmesi
+
+### Hounsfield Birimleri (HU)
+BT taramasının piksel değerleri Hounsfield Birimleri cinsinden ifade edilmiştir çünkü BT taramalarındaki ölçü birimi, bir radyo yoğunluğu ölçüsü olan Hounsfield Birimidir (HU). BT tarayıcıları, bunu doğru bir şekilde ölçmek için dikkatlice kalibre edilir.
+
+<img src="HU.png" width="auto">
+
+
+Malzemelerin HU değerleri Aşağıdaki tablodaki gibidir.
+
+<img src="HU.png" width="auto">
+
+
+
+HU değerleri sayesinde dokuların BT görüntülerinde farklı pixellerde algılanmasına sebep olmaktadır. Buda BT görüntülerinde dokuların, kemiklerin ve organların daha belirgin yapısını gözlemede olanak sağlamaktadır. Böylece gözle görünmeyen pixel faklılıklarını da resim işleme sırasında daha belirgin hale getirip bölge işartelemelri ve segmentsyonları yapılmasına olanak sağlamaktadır.
+
 
 
