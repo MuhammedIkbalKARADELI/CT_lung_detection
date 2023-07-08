@@ -118,3 +118,20 @@ HU değerleri sayesinde dokuların BT görüntülerinde farklı pixellerde algı
 
 
 
+### Verileri Modifiye Etmek
+İlk olarak, havanın vücuttaki diğer maddelerden önemli ölçüde daha az HU olduğudur, bu nedenle "eşik"  eğeri ile maske uyguluyoruz. Alt limit olarak -320 HU kullanalarak Mask işlemini gerçekleştirildi.
+
+BT görüntümüzde iki akciğer ve bit masadan oluşan üç segmente edilmiş alan elde edilir. Ve buda belirli nitelendirilir.
+Şimdi biraz sezgisel olmayan bir şey için. Görüntünün her dilimi için en büyük üç alanı korumak istiyoruz. Ve bu üç alandan ikisi bizim akcğerlerimizi temsil etmektedir. Ve bu iki akciğer alanı belirlemke için izlenilen yol şu şekildedir.
+
+Bazı dilimlerde akciğerlerden biri masadan daha büyük olabilir.
+Bazı dilimlerde akciğerlerden biri masadan daha küçük olabilir.
+Sadece en büyük iki dilimi alırsak, masayı ve ciğerlerden birini alabiliriz. Şimdilik ilk 3'ü ele alalım. Aşağıdaki işlev, 3B görüntünün tek bir diliminde çalışacak şekilde tasarlanmıştır.
+
+
+### binary_dilation()
+Görüntü segmentasyon bağlamında, yakın bölgeleri veya nesneleri birleştirmek, boşlukları veya delikleri doldurmak ve genellikle ön plandaki nesnelerin sınırlarını geliştirmek veya değiştirmek için genişleme kullanılabilir. binary_dilation ile elde edilen bianry resim ile orijinal resimin biribrimyle çarpımından elde edilen resim istediğimiz bölgeyi direk bize göstererek direk akciğer görüntüsüne odaklnama imkanı sunar. Ve bu ilgili alan yapay zekanın daha iyi öğrenmesine olanak sağlar. Bu süreçte binary_dilation önemli bir rol almaktadır. 
+
+### Son olarak 
+Üç düzlemi (sırasıyla Eksenel, Koronal ve Sagital) içeren 3 çizimi şimdide BT görüntülerinin segmentasynun sonucu ile bunu gerçekleştirilecektir.
+
